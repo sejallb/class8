@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets App</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Create Pets App</h1>
+  </header>
+  
+  <fieldset id="firstID" class="box-area">
+    <legend>Create a new pet</legend>
+    <label>Name:</label>
+    <input id="nameInput"/>
+    <label>Age:</label>
+    <input id="ageInput" type="number"/>
+    <label>Picture:</label>
+    <input id="pictureInput" type="text" placeholder="Image URL"/>
+    <button id="addButton">Add Pet</button>
+  </fieldset>
+
+  <main id="petsDisplay" class="box-area">
+    <!-- Pets will be displayed here -->
+  </main>
+
+  <footer>
+    <button onclick="countElements()">Count Elements</button>
+    <button onclick="countFirstIDElements()">Count Elements in First ID</button>
+    <button onclick="countSecondIDElements()">Count Elements in Second ID</button>
+
+    <div id="elementCount"></div>
+    <div id="firstIDCount"></div>
+    <div id="secondIDCount"></div>
+  </footer>
+
+</body>
+</html>
